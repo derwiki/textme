@@ -7,12 +7,14 @@ app = Flask(__name__)
 
 TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", None)
 TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN", None)
-CLIENT = Client(TWILIO_ACCOUNT_SID, TWILIO_ACCOUNT_SID)
+print(TWILIO_ACCOUNT_SID)
+print(TWILIO_AUTH_TOKEN)
+CLIENT = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 
 @app.route("/")
 def textme():
-    CLIENT.Messages.create(
+    CLIENT.messages.create(
         body=request.values["t"], from_="6145052620", to="7405023073"
     )
     return "OK"
