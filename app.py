@@ -12,7 +12,6 @@ CLIENT = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 @app.route("/")
 def textme():
-    CLIENT.messages.create(
-        body=request.values["t"], from_="6145052620", to="7405023073"
-    )
+    body = request.values.get("t", "SYN")
+    CLIENT.messages.create(body=body, from_="6145052620", to="7405023073")
     return "OK"
