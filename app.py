@@ -7,8 +7,6 @@ app = Flask(__name__)
 
 TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", None)
 TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN", None)
-print(TWILIO_ACCOUNT_SID)
-print(TWILIO_AUTH_TOKEN)
 CLIENT = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 
