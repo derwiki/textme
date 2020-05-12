@@ -9,7 +9,7 @@ When I invoke a long-running command, I usually context switch and come back
 later so I'm not waiting on it. Natively on OSX, notifying myself upon
 completion is as easy as:
 ```
-$ ./long-running-command.sh && say Command Done
+$ ./long-running-command.sh ; say Command Done
 ```
 
 This results in a robo-voice saying "command done." However, if you're like me,
@@ -22,7 +22,7 @@ it's something that needs to be installed, it's less useful.
 TextMe started with that principle: no installation. Additionally, it had to
 be a quick and easy to memorize command. The following:
 ```
-$ ./long-running-command.sh && curl textderwiki.herokuapp.com
+$ ./long-running-command.sh ; curl textderwiki.herokuapp.com
 ```
 
 uses the TextMe app, installed on Heroku, to send me a text message when
