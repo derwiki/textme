@@ -49,7 +49,7 @@ heroku create textderwiki
 heroku config:set NUMBER_FROM=5555551212 NUMBER_TO=5558675309 TWILIO_ACCOUNT_SID=<redacted> TWILIO_AUTH_TOKEN=<redacted> -a textderwiki
 
 # deploy to Heroku
-git push heroku origin master
+git push heroku master
 
 # invoke the service to send you an SMS
 curl textderwiki.herokuapp.com?t=hello
