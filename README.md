@@ -35,7 +35,7 @@ uses the TextMe app, installed on Heroku, to send me a text message when
 
 #### Pre-requisites
 1. Heroku account
-1. (Heroku CLI tool)[https://devcenter.heroku.com/articles/heroku-cli]
+1. [Heroku CLI tool](https://devcenter.heroku.com/articles/heroku-cli)
 1. Twilio free/trial account
 
 
